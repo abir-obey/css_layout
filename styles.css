@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Comforter+Brush&family=Open+Sans:ital,wght@0,300;1,300&family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
+/*initialisation*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* background-color: white; */
+}
+/* Header CSS */
+/*navbar*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  padding: 30px 10%;
+  box-shadow: 0 0 10px gainsboro;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  cursor: pointer;
+}
+.dropdown-Depart {
+  display: flex;
+  position: relative;
+}
+.dropdown-Depart li {
+  position: absolute;
+  display: block;
+  font-weight: bold;
+  top: 4rem;
+  left: -1rem;
+}
+.dropdown-Depart li a {
+  list-style: none;
+}
+.dropdown-Depart li a:hover {
+}
+
+.dropdown-Depart:hover li {
+  display: flex;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a :hover {
+  color: lightseagreen;
+}
+
+/* *************************************************** */
+/* Main Part CSS */
+/* Introduction Part CSS */
+#introduction-part {
+  /* positions */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 10%;
+  padding: 5%;
+}
+
+#introduction-part-h1 {
+  font-size: 2.125rem;
+  color: #00b39b;
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 200;
+  margin: 2%;
+}
+#introduction-part-paragraph {
+  display: flex;
+}
+#introduction-part-paragraph p {
+  color: gray;
+  line-height: 1.75;
+  font-weight: 400;
+  padding: 2%;
+}
+
+/*cards part*/
+#cards {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  margin: auto;
+  height: 345;
+  width: 70%;
+}
+#cards h1 {
+  color: white;
+}
+#cards p {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+}
+.services {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2%;
+  border-radius: 10px;
+  height: 345px;
+  width: 300px;
+  margin: 2%;
+  overflow: hidden;
+  color: white;
+}
+#choose-country {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#service1 {
+  background: #00ccb1;
+}
+#service2 {
+  background-color: #3d83df;
+}
+#service3 {
+  background-color: #1b2734;
+}
+
+/*global companies part*/
+#global_companies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2% 10%;
+  width: 60%;
+  padding: 2%;
+}
+.list_global_companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  cursor: pointer;
+  width: 60%;
+  align-items: center;
+}
+#global_companies h3 {
+  width: 20%;
+  font-size: 1.625em;
+  /* margin: 0.25em 0 0.35em; */
+  padding-right: 1em;
+  color: #00b39b;
+}
+
+.list_global_companies li {
+  list-style: none;
+  /* display: flex; */
+}
+.list_global_companies li svg {
+  fill: gray;
+}
+.list_global_companies li svg:hover {
+  fill: #00b39b;
+}
+.list_global_companies li img {
+  filter: grayscale(100%);
+}
+.list_global_companies li img:hover {
+  filter: grayscale(0%);
+}
+/*stats part*/
+#stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5faf8;
+  background-image: url(/logo.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-attachment: fixed;
+  height: 550px;
+}
+#stats-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+}
+#grid-stats {
+  display: block;
+  flex-wrap: wrap;
+}
+
+/*text part*/
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  color: #747474;
+  text-align: center;
+  padding: 5%;
+  margin: 2% 10%;
+}
+.text h1 {
+  display: flex;
+  align-items: center;
+}
+.text p {
+  display: flex;
+  align-items: center;
+}
+
+/*countries*/
+#countries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2% 10%;
+}
+.country {
+  margin: 2%;
+  border-radius: 10px;
+}
+.country img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.country:hover {
+  box-shadow: 12px 12px 1px 1px rgba(0, 0, 255, 0.2);
+  cursor: pointer;
+}
+.country div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+.country button {
+  display: inline-block;
+  background-color: #3d83df;
+  color: white;
+  border-radius: 4px;
+  margin: 1%;
+  cursor: pointer;
+  padding: 1.1666666667em 1.5em;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+  opacity: 90%;
+}
+.country button:hover {
+  opacity: 100%;
+}
+
+/*interesting*/
+.interesting {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2% 10%;
+  width: 60%;
+  height: 10%;
+  text-align: center;
+  margin: auto;
+}
+h1 {
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 0.75em;
+  text-shadow: none;
+}
+
+.interesting button {
+  display: inline-block;
+  background-color: #3d83df;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 1.1666666667em 1.5em;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+  outline: 0;
+  border: 0;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.74rem;
+  text-align: center;
+  opacity: 80%;
+}
+.interesting button:hover {
+  opacity: 100%;
+}
+/*footer*/
+#footer {
+  margin: 2% 10%;
+  padding: 1%;
+  font-size: 14px;
+  color: #ababab;
+}
+.leaders {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.p2 {
+  display: flex;
+  justify-content: center;
+}
+.p3 {
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: gray;
+}
